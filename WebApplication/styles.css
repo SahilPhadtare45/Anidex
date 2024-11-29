@@ -1,0 +1,211 @@
+﻿body {
+    background-image: url('images/moon.jpg');
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-size: 100%;
+}
+
+.screen {
+    position: relative;
+    width: 800px;
+    height: 750px;
+    transform-style: preserve-3d;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.thefront {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #273c61;
+    border-radius: 20px 20px 20px 20px;
+/*    filter: brightness(100%);*/
+}
+
+.theback {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    background: #273c61;
+    color: #ffd800;
+    border-radius: 20px 20px 20px 20px;
+    transform: rotateY(180deg);
+    /*filter: brightness(100%);*/
+    top: -2px;
+    left: -1px;
+}
+
+.login {
+    margin-top: 100px;
+    color: #ffd800;
+    font-family: "Aclonica", sans-serif;
+    margin-left: 800px;
+    font-size: 30px;
+}
+
+.sign {
+    color: #ffd800;
+    font-family: "Aclonica", sans-serif;
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 30px;
+    margin-right: 50px;
+    bottom: 10px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    background-color: dimgrey;
+    transition: .4s ease;
+    border-radius: 34px;
+}
+
+.switch input {
+    display: none
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 5px;
+    bottom: 5px;
+    background-color: black;
+    transition: 0.4s ease;
+    border-radius: 50px;
+}
+
+input:checked + .slider {
+    background-color: #ffd800;
+}
+
+    input:checked + .slider:before {
+        transform: translateX(20px);
+    }
+
+/*input:checked + .thecard {
+    transform: rotateY(180deg);
+}*/
+
+.mainlogin {
+    color: #ffd800;
+    font-family: "Aclonica", sans-serif;
+    font-size: 50px;
+    margin-left: 340px;
+    border: none;
+}
+
+.textbox {
+    height: 50px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 150px;
+    background-color: #0b0e21;
+    padding-left: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 5px 5px 2px gold;
+}
+
+input:not(:placeholder-shown) {
+    font-family: "Aclonica", sans-serif;
+    color: #ffd800;
+}
+
+.textbox2 {
+    height: 50px;
+    width: 500px;
+    margin-top: 40px;
+    margin-left: 150px;
+    background-color: #0b0e21;
+    padding-left: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 5px 5px 2px gold;
+}
+
+.logbtn {
+    height: 50px;
+    Width: 150px;
+    font-family: "Aclonica", sans-serif;
+    font-size: 30px;
+    background-color: #230441;
+    border-radius: 30px;
+    margin-left: 325px;
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+.FP {
+    font-family: "Aclonica", sans-serif;
+    margin-left: 325px;
+    color: gold;
+}
+
+.L6 {
+    font-family: "Aclonica", sans-serif;
+    margin-left: 150px;
+    color: red;
+}
+
+.mainsign {
+    color: #ffd800;
+    font-family: "Aclonica", sans-serif;
+    font-size: 50px;
+    margin-left: 325px;
+}
+
+.regbtn {
+    height: 50px;
+    Width: 225px;
+    font-family: "Aclonica", sans-serif;
+    font-size: 30px;
+    background-color: #230441;
+    color: aliceblue;
+    border-radius: 30px;
+    margin-left: 296px;
+    margin-top: 10px;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.1;
+}
+
+.rotate {
+    transform: rotateY(180deg);
+}
+
+.validator {
+    color: red; 
+    font-size: 15px;
+}
+
+.validator-center {
+    text-align: center;
+    margin-top: 7px;
+}

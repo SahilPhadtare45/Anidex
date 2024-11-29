@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE address SYSTEM "address.dtd">
+<address>
+	<name>SMIT</name>
+	<company>abc</company>
+	<phone>1234567</phone>
+</address>
+
+<!--address.dtd
+<!ELEMENT address (name,company,phone)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT company (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+-->

@@ -1,0 +1,25 @@
+# Build directories
+bin/
+obj/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Visual Studio Code settings
+.vscode/
+
+# Visual Studio folder
+.vs/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Node.js modules (if your ASP.NET project uses Node)
+node_modules/
